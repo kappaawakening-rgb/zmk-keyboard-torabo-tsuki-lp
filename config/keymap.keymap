@@ -49,11 +49,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans                &trans                 &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans                &trans                 &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA             &kp PERIOD             &kp SLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                 &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans             &trans                &trans                &trans                 &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp GRAVE          &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PRCNT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES  &kp DOLLAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp AT             &kp SEMICOLON         &kp COMMA             &kp PERIOD             &kp SLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans                &trans                &trans                 &trans     &trans
             >;
         };
 
