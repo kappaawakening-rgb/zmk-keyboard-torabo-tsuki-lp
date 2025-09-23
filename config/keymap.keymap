@@ -40,11 +40,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans  &trans  &trans  &trans      &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)      &kp N7  &kp N8  &kp N9  &kp LS(N0)  &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp LEFT_BRACE  &kp N4  &kp N5  &kp N6  &kp COLON   &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp N0          &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &trans  &trans  &trans  &trans      &trans
+&trans  &trans            &trans            &trans      &trans      &trans                      &trans     &trans  &trans  &trans  &trans        &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH     &trans
+&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans
+&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD    &trans
+&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp EQUAL  &trans  &trans  &trans  &trans        &trans
             >;
         };
 
