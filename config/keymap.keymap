@@ -40,11 +40,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                      &trans     &trans  &trans  &trans  &trans        &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD    &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp EQUAL  &trans  &trans  &trans  &trans        &trans
+&trans  &trans  &trans              &trans          &trans               &trans                                            &trans     &trans  &trans  &trans  &trans        &trans
+&trans  &trans  &trans              &trans          &trans               &kp LC(LG(T))                                     &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH     &trans
+&trans  &trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp PRINTSCREEN  &trans                   &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans
+&trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LS(LG(T))    &kp LG(LC(D))            &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD    &trans
+&trans  &trans  &trans              &trans          &kp LC(LG(LEFT))     &trans           &kp LC(LG(RIGHT_ARROW))  &trans  &kp EQUAL  &trans  &trans  &trans  &trans        &trans
             >;
         };
 
