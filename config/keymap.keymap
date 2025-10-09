@@ -19,21 +19,21 @@
 
         layer_0 {
             bindings = <
-&trans  &trans                &trans          &trans            &trans        &trans                                  &trans      &trans  &trans    &trans            &trans     &trans
-&trans  &kp Q                 &kp W           &kp E             &kp R         &kp T                                   &kp Y       &kp U   &kp I     &kp O             &kp P      &trans
-&trans  &kp A                 &kp S           &kp D             &kp F         &kp G       &trans         &trans       &kp H       &kp J   &kp K     &kp L             &kp MINUS  &trans
-&trans  &kp Z                 &kp X           &kp C             &kp V         &kp B       &kp BACKSPACE  &kp DELETE   &kp N       &kp M   &mkp MB1  &mkp MB2          &mkp MB3   &trans
-&trans  &mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &mt LEFT_ALT TAB  &kp LEFT_WIN  &lt 2 LALT  &lt 3 SPACE    &lt 2 SPACE  &lt 1 RALT  &trans  &trans    &mmv MOVE_Y(300)  &kp ENTER  &trans
+&trans  &trans                &trans          &trans            &trans        &trans                                        &trans          &trans  &trans    &trans            &trans     &trans
+&trans  &kp Q                 &kp W           &kp E             &kp R         &kp T                                         &kp Y           &kp U   &kp I     &kp O             &kp P      &trans
+&trans  &kp A                 &kp S           &kp D             &kp F         &kp G             &trans         &trans       &kp H           &kp J   &kp K     &kp L             &kp MINUS  &trans
+&trans  &kp Z                 &kp X           &kp C             &kp V         &kp B             &kp BACKSPACE  &kp DELETE   &kp N           &kp M   &mkp MB1  &mkp MB2          &mkp MB3   &trans
+&trans  &mt LEFT_CONTROL ESC  &kp LEFT_SHIFT  &mt LEFT_ALT TAB  &kp LEFT_WIN  &lt 2 LANGUAGE_5  &lt 3 SPACE    &lt 2 SPACE  &lt 1 INT_KANA  &trans  &trans    &mmv MOVE_Y(300)  &kp ENTER  &trans
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans                  &trans     &trans              &trans          &trans               &trans         &trans
-&trans  &kp F9  &kp F10  &kp F12  &kp F12  &trans                  &kp PG_UP  &kp HOME            &trans          &kp END              &kp DEL        &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &trans  &kp PG_DN  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &kp BACKSPACE  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans  &trans     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans         &trans
-&trans  &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans     &trans              &trans          &trans               &trans         &trans
+&trans  &trans  &trans  &trans   &trans   &trans                   &trans     &trans              &trans          &trans               &trans         &trans
+&trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12                  &kp PG_UP  &kp HOME            &trans          &kp END              &kp DEL        &trans
+&trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &kp PG_DN  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp RA(RIGHT_ARROW)  &kp BACKSPACE  &trans
+&trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans         &trans
+&trans  &trans  &trans  &trans   &trans   &trans   &trans  &trans  &trans     &trans              &trans          &trans               &trans         &trans
             >;
         };
 
