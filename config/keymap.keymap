@@ -42,8 +42,8 @@
 &trans  &trans  &trans              &trans          &trans               &trans                                            &trans     &trans  &trans  &trans  &trans        &trans
 &trans  &trans  &trans              &trans          &trans               &kp LC(LG(T))                                     &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH     &trans
 &trans  &trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp PRINTSCREEN  &trans                   &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans
-&trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LS(LG(T))    &kp LG(LC(D))            &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD    &trans
-&trans  &trans  &trans              &trans          &kp LC(LG(LEFT))     &trans           &kp LC(LG(RIGHT_ARROW))  &trans  &kp EQUAL  &trans  &trans  &trans  &trans        &trans
+&trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LS(LG(T))    &trans                   &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD    &trans
+&trans  &trans  &kp LC(LG(F4))      &kp LC(LG(D))   &kp LC(LG(LEFT))     &trans           &kp LC(LG(RIGHT_ARROW))  &trans  &kp EQUAL  &trans  &trans  &trans  &trans        &trans
             >;
         };
 
