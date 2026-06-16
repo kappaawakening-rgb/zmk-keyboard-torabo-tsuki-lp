@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 &pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+<&zip_temp_layer 8 10000>;
 
 scroller {
 	layers = <6>;
@@ -12,6 +13,11 @@ scroller {
 <&zip_scroll_scaler 11 130>;
 	process-next;
 	}; //スクロールレイヤー定義
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <150>;
+    excluded-positions = <33 34 35>; // J K L
 };
 
 &size_s_transform {
