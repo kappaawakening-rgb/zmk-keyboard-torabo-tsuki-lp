@@ -37,7 +37,7 @@
         };
 
         Mac-Default_Layer {
-            bindings = 
+            bindings = <
 &trans  &trans            &trans          &trans            &trans        &trans                                        &trans              &trans  &trans    &trans      &trans     &trans
 &trans  &kp Q             &kp W           &kp E             &kp R         &kp T                                         &kp Y               &kp U   &kp I     &kp O       &lt 6 P    &trans
 &trans  &kp A             &kp S           &kp D             &kp F         &kp G             &trans         &trans       &kp H               &kp J   &kp K     &kp L       &kp MINUS  &trans
@@ -47,7 +47,7 @@
         };
 
         Win-Function_Layer {
-            bindings = 
+            bindings = < 
 &trans  &trans  &trans  &trans  &trans  &trans                       &trans                &trans                 &trans             &trans                &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                       &kp LESS_THAN         &kp GREATER_THAN       &kp DOUBLE_QUOTES  &kp SEMICOLON         &kp AMPERSAND    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT            &kp COLON             &kp EXCLAMATION  &trans
@@ -57,7 +57,7 @@
         };
 
         layer_3 {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -67,7 +67,7 @@
         };
 
         Win-Common_Layer {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                         &trans         &trans              &trans          &trans               &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &kp LC(LG(T))                  &trans         &kp HOME            &trans          &kp END              &kp DEL        &trans
 &trans  &trans  &trans  &trans  &trans  &kp PSCRN      &trans  &trans  &kp PG_UP      &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp BACKSPACE  &trans
@@ -77,7 +77,7 @@
         };
 
         layer_5 {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -87,7 +87,7 @@
         };
 
         Num_Layer {
-            bindings = 
+            bindings = <
 &trans  &trans   &trans   &trans  &trans          &trans                                   &trans      &trans  &trans  &trans        &trans         &trans
 &trans  &kp F1   &kp F2   &kp F3  &kp F4          &kp F5                                   &kp N7      &kp N8  &kp N9  &kp SLASH     &kp DELETE     &trans
 &trans  &kp F6   &kp F7   &kp F8  &kp F9          &kp F10         &trans           &trans  &kp N4      &kp N5  &kp N6  &kp ASTERISK  &kp BACKSPACE  &trans
@@ -97,7 +97,7 @@
         };
 
         Setting_Layer {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &trans        &trans        &trans        &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans          &trans
@@ -107,7 +107,7 @@
         };
 
         Mouse_Layer {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
