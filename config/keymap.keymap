@@ -28,26 +28,26 @@
 
         Win-Default_Layer {
             bindings = <
-&trans  &trans            &trans          &trans    &trans        &trans                                        &trans              &trans  &trans    &trans      &trans     &trans
-&trans  &kp Q             &kp W           &kp E     &kp R         &kp T                                         &kp Y               &kp U   &kp I     &kp O       &lt 6 P    &trans
-&trans  &kp A             &kp S           &kp D     &kp F         &kp G             &trans         &trans       &kp H               &kp J   &kp K     &kp L       &kp MINUS  &trans
-&trans  &mt LEFT_SHIFT Z  &kp X           &kp C     &kp V         &kp B             &kp BACKSPACE  &kp DELETE   &kp N               &kp M   &mkp MB1  &mkp MB2    &mkp MB3   &trans
-&trans  &kp LCTRL         &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 6 SPACE  &lt 4 LANG_HANGEUL  &trans  &trans    &lt 7 HASH  &kp ENTER  &trans
+&trans  &trans            &trans          &trans    &trans        &trans                                        &trans              &trans  &trans     &trans      &trans     &trans
+&trans  &kp Q             &kp W           &kp E     &kp R         &kp T                                         &kp Y               &kp U   &kp I      &kp O       &lt 6 P    &trans
+&trans  &kp A             &kp S           &kp D     &kp F         &kp G             &trans         &trans       &kp H               &kp J   &kp K      &kp L       &kp MINUS  &trans
+&trans  &mt LEFT_SHIFT Z  &kp X           &kp C     &kp V         &kp B             &kp BACKSPACE  &kp DELETE   &kp N               &kp M   &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+&trans  &kp LCTRL         &kp LEFT_SHIFT  &kp LALT  &kp LEFT_GUI  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 6 SPACE  &lt 4 LANG_HANGEUL  &trans  &trans     &lt 7 HASH  &kp ENTER  &trans
             >;
         };
 
         Mac-Default_Layer {
             bindings = <
-&trans  &trans            &trans          &trans            &trans        &trans                                        &trans              &trans  &trans    &trans      &trans     &trans
-&trans  &kp Q             &kp W           &kp E             &kp R         &kp T                                         &kp Y               &kp U   &kp I     &kp O       &lt 6 P    &trans
-&trans  &kp A             &kp S           &kp D             &kp F         &kp G             &trans         &trans       &kp H               &kp J   &kp K     &kp L       &kp MINUS  &trans
-&trans  &mt LEFT_SHIFT Z  &kp X           &kp C             &kp V         &kp B             &kp BACKSPACE  &kp DELETE   &kp N               &kp M   &mkp MB1  &mkp MB2    &mkp MB3   &trans
-&trans  &kp LEFT_META     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 6 SPACE  &lt 4 LANG_HANGEUL  &trans  &trans    &lt 7 HASH  &kp ENTER  &trans
+&trans  &trans            &trans          &trans            &trans        &trans                                        &trans              &trans  &trans     &trans      &trans     &trans
+&trans  &kp Q             &kp W           &kp E             &kp R         &kp T                                         &kp Y               &kp U   &kp I      &kp O       &lt 6 P    &trans
+&trans  &kp A             &kp S           &kp D             &kp F         &kp G             &trans         &trans       &kp H               &kp J   &kp K      &kp L       &kp MINUS  &trans
+&trans  &mt LEFT_SHIFT Z  &kp X           &kp C             &kp V         &kp B             &kp BACKSPACE  &kp DELETE   &kp N               &kp M   &kp COMMA  &kp PERIOD  &kp FSLH   &trans
+&trans  &kp LEFT_META     &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 6 LANGUAGE_2  &lt 2 SPACE    &lt 6 SPACE  &lt 4 LANG_HANGEUL  &trans  &trans     &lt 7 HASH  &kp ENTER  &trans
             >;
         };
 
         Win-Function_Layer {
-            bindings = < 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                       &trans                &trans                 &trans             &trans                &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                       &kp LESS_THAN         &kp GREATER_THAN       &kp DOUBLE_QUOTES  &kp SEMICOLON         &kp AMPERSAND    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SQT            &kp COLON             &kp EXCLAMATION  &trans
@@ -108,11 +108,11 @@
 
         Mouse_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
             >;
         };
     };
