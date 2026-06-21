@@ -16,42 +16,37 @@
             bindings = <&kp ESC>;
             key-positions = <13 14>;
         };
-
-        Layer6 {
-            bindings = <&lt 6 LEFT_SHIFT>;
-            key-positions = <48 49>;
-        };
     };
 
     macros {
         bt0_to_win: bt0_to_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&to 0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
         };
 
         bt1_to_win: bt1_to_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&to 0>;
+            bindings = <&bt BT_SEL 1 &to 0>;
         };
 
         bt2_to_win: bt2_to_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&to 0>;
+            bindings = <&bt BT_SEL 2 &to 0>;
         };
 
         bt3_to_mac: bt3_to_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3>, <&to 1>;
+            bindings = <&bt BT_SEL 3 &to 1>;
         };
 
         bt4_to_mac: bt4_to_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&to 1>;
+            bindings = <&bt BT_SEL 4 &to 1>;
         };
     };
 
@@ -130,11 +125,11 @@
 
         Setting_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans        &trans        &trans        &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &bt0_to_win   &bt1_to_win   &bt2_to_win   &bt3_to_mac   &bt4_to_mac     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0   &trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &to 1   &trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans       &trans       &trans       &trans       &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &bt0_to_win  &bt1_to_win  &bt2_to_win  &bt3_to_mac  &bt4_to_mac     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans       &trans       &trans       &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0   &trans  &trans       &trans       &trans       &trans       &bt BT_CLR      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 1   &trans  &trans       &trans       &trans       &trans       &bt BT_CLR_ALL  &trans
             >;
         };
 
