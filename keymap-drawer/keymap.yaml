@@ -608,5 +608,3 @@ combos:
   k: TAB
 - p: [13, 14]
   k: ESC
-- p: [48, 49]
-  k: {t: LEFT SHIFT, h: Num_Layer}
