@@ -1,0 +1,4 @@
+parse:
+  layout:
+    qmk_info_json: "config/info.json"
+    qmk_layout: "LAYOUT"
