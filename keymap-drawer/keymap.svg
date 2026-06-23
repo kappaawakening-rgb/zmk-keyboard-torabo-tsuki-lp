@@ -420,6 +420,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 336)" class="layer-Mac-Default_Layer">
@@ -722,6 +732,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 672)" class="layer-Win-Function_Layer">
@@ -998,6 +1018,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1008)" class="layer-3">
@@ -1275,6 +1305,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1344)" class="layer-Win-Common_Layer">
@@ -1571,6 +1611,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1680)" class="layer-5">
@@ -1848,6 +1898,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2016)" class="layer-Num_Layer">
@@ -2135,6 +2195,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2352)" class="layer-Setting_Layer">
@@ -2415,6 +2485,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 2688)" class="layer-Mouse_Layer">
@@ -2698,6 +2778,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 3024)" class="layer-Tab_Gesture_Layer">
@@ -2843,13 +2933,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(700, 140)" class="key trans keypos-35">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(700, 140)" class="key held keypos-35">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(756, 140)" class="key trans keypos-36">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(756, 140)" class="key held keypos-36">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(812, 140)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2975,6 +3063,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 3360)" class="layer-VDesk_Gesture_Layer">
@@ -3064,13 +3162,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(700, 84)" class="key trans keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(700, 84)" class="key held keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(756, 84)" class="key trans keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(756, 84)" class="key held keypos-22">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(812, 84)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3252,6 +3348,16 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<a href="#Tab_Gesture_Layer">
+<text x="728" y="140" class="combo tap layer-activator"><tspan style="font-size: 64%">Tab_Gestur…</tspan></text>
+</a></g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="714" y="71" width="28" height="26" class="combo"/>
+<a href="#VDesk_Gesture_Layer">
+<text x="728" y="84" class="combo tap layer-activator"><tspan style="font-size: 64%">VDesk_Gest…</tspan></text>
+</a></g>
 </g>
 </g>
 </svg>
