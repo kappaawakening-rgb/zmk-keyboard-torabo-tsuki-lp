@@ -1,33 +1,86 @@
-#include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
+#include <input/processors/zmk-input-processor-keybind.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-&pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-<&zip_temp_layer 8 10000>;
+// ─────────────────────────────────────────────
+// タブ切替ジェスチャ用プロセッサ (Layer 9で有効)
+//   右 → Ctrl+Tab       (次のタブ)
+//   左 → Ctrl+Shift+Tab (前のタブ)
+//   上 → Ctrl+T         (新規タブ)  ※tick大きめで暴発抑制
+//   下 → Ctrl+W         (タブ閉じ)  ※tick大きめで暴発抑制
+// ─────────────────────────────────────────────
+/ {
+    zip_tab_gesture: zip_tab_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;           // 4方向モード（斜め入力を無効化）
+        track_remainders;
+        bindings =
+            <&kp LC(TAB)>,        // X正方向 = 右 = 次のタブ
+            <&kp LC(LS(TAB))>,    // X負方向 = 左 = 前のタブ
+            <&kp LC(T)>,          // Y負方向 = 上 = 新規タブ
+            <&kp LC(W)>;          // Y正方向 = 下 = タブ閉じる
+        tick = <80>;          // 左右: 80単位で1発火
+        wait-ms = <0>;
+        tap-ms = <10>;
+    };
+};
 
-scroller {
-	layers = <6>;
-	input-processors = <&zip_xy_to_scroll_mapper>,
-<&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>,
-<&zip_scroll_scaler 11 130>;
-	process-next;
-	}; //スクロールレイヤー定義
+// ─────────────────────────────────────────────
+// 仮想デスクトップジェスチャ用プロセッサ (Layer 10で有効)
+//   右 → Ctrl+Win+Right (次のデスクトップ)
+//   左 → Ctrl+Win+Left  (前のデスクトップ)
+//   上 → Ctrl+Win+D     (新規デスクトップ)  ※tick大きめで暴発抑制
+//   下 → Ctrl+Win+F4    (デスクトップ閉じ)  ※tick大きめで暴発抑制
+// ─────────────────────────────────────────────
+/ {
+    zip_vdesk_gesture: zip_vdesk_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;           // 4方向モード（斜め入力を無効化）
+        track_remainders;
+        bindings =
+            <&kp LC(LG(RIGHT))>,  // X正方向 = 右 = 次のデスクトップ
+            <&kp LC(LG(LEFT))>,   // X負方向 = 左 = 前のデスクトップ
+            <&kp LC(LG(D))>,      // Y負方向 = 上 = 新規デスクトップ
+            <&kp LC(LG(F4))>;     // Y正方向 = 下 = デスクトップ閉じる
+        tick = <80>;          // 左右: 80単位で1発火
+        wait-ms = <0>;
+        tap-ms = <10>;
+    };
+};
+
+// ─────────────────────────────────────────────
+// pointing_listener: 既存設定＋Layer9/10のジェスチャを追加
+// ─────────────────────────────────────────────
+&pointing_listener {
+    input-processors =
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+        <&zip_temp_layer 8 10000>;
+
+    scroller {
+        layers = <6>;
+        input-processors =
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>,
+            <&zip_scroll_scaler 11 130>;
+        process-next;
+    };
+
+    // Layer 9 (Tab_Gesture_Layer) 有効時: タブ切替ジェスチャ
+    tab_gesture {
+        layers = <9>;
+        input-processors = <&zip_tab_gesture>;
+    };
+
+    // Layer 10 (VDesk_Gesture_Layer) 有効時: 仮想デスクトップジェスチャ
+    vdesk_gesture {
+        layers = <10>;
+        input-processors = <&zip_vdesk_gesture>;
+    };
 };
 
 &zip_temp_layer {
     require-prior-idle-ms = <150>;
-    excluded-positions = <33 34 35>; // J K L
-};
-
-&size_s_transform {
-    col-offset = <7>;
-};
-
-&size_m_transform {
-    col-offset = <7>;
-};
-
-&size_l_transform {
-    col-offset = <7>;
+    excluded-positions = <33 34 35>; // J K L (MB1 MB2 MB3)
 };
