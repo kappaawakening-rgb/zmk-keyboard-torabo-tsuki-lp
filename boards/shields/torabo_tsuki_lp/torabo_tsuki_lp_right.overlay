@@ -8,14 +8,13 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         mode = <1>;
-        track_remainders;
         bindings =
-            <&kp LC(TAB)>,
-            <&kp LC(LS(TAB))>,
-            <&kp LC(T)>,
-            <&kp LC(W)>;
+            <&kp LC(TAB)>,        // 右: 次のタブ
+            <&kp LC(LS(TAB))>,    // 左: 前のタブ
+            <&kp LC(T)>,          // 上: 新規タブ
+            <&kp LG(DOWN)>;       // 下: 最小化
         tick = <80>;
-        wait-ms = <0>;
+        wait-ms = <60>;
         tap-ms = <10>;
     };
 
@@ -23,14 +22,13 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         mode = <1>;
-        track_remainders;
         bindings =
-            <&kp LC(LG(RIGHT))>,
-            <&kp LC(LG(LEFT))>,
-            <&kp LC(LG(D))>,
-            <&kp LC(LG(F4))>;
+            <&kp LC(LG(RIGHT))>,  // 右: 次のデスクトップ
+            <&kp LC(LG(LEFT))>,   // 左: 前のデスクトップ
+            <&kp LC(LG(D))>,      // 上: 新規デスクトップ
+            <&kp LG(DOWN)>;       // 下: 最小化
         tick = <80>;
-        wait-ms = <0>;
+        wait-ms = <60>;
         tap-ms = <10>;
     };
 };
@@ -49,12 +47,12 @@ scroller {
 
 tab_gesture {
 	layers = <9>;
-	input-processors = <&zip_tab_gesture>;
+	input-processors = <&zip_y_scaler 1 2>, <&zip_tab_gesture>, <&zip_xy_scaler 0 1>;
 	};
 
 vdesk_gesture {
 	layers = <10>;
-	input-processors = <&zip_vdesk_gesture>;
+	input-processors = <&zip_y_scaler 1 2>, <&zip_vdesk_gesture>, <&zip_xy_scaler 0 1>;
 	};
 };
 
