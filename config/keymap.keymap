@@ -20,11 +20,13 @@
         Layer9 {
             bindings = <&mo 9>;
             key-positions = <35 36>;
+            timeout-ms = <30>;
         };
 
         Layer10 {
             bindings = <&mo 10>;
             key-positions = <21 22>;
+            timeout-ms = <30>;
         };
     };
 
