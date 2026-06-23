@@ -143,7 +143,11 @@
             >;
         };
 
-        layer_9 {
+        // Layer 9: ブラウザタブ切替ジェスチャ専用レイヤー
+        // ボール操作: 左=前タブ 右=次タブ 上=新規タブ 下=タブ閉じる
+        // キーバインドはoverlay側のzip_tab_gestureで処理
+        // このレイヤー自体はキー入力なし（全&trans）でよい
+        Tab_Gesture_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -153,7 +157,10 @@
             >;
         };
 
-        layer_10 {
+        // Layer 10: 仮想デスクトップ切替ジェスチャ専用レイヤー
+        // ボール操作: 左=前デスク 右=次デスク 上=新規デスク 下=デスク閉じる
+        // キーバインドはoverlay側のzip_vdesk_gestureで処理
+        VDesk_Gesture_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
