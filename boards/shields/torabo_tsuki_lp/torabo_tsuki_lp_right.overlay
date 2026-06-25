@@ -4,83 +4,96 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 / {
-    zip_tab_gesture: zip_tab_gesture {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        mode = <1>;
-        bindings =
-            <&kp LC(LS(TAB))>,    // 右: 前のタブ → INVERT補正で実際は「次のタブ」
-            <&kp LC(TAB)>,        // 左: 次のタブ → INVERT補正で実際は「前のタブ」
-            <&kp LG(DOWN)>,       // 上: 最小化  → INVERT補正で実際は「下=最小化」
-            <&kp LC(T)>;          // 下: 新規タブ → INVERT補正で実際は「上=新規タブ」
-        tick = <80>;
-        wait-ms = <60>;
-        tap-ms = <10>;
-    };
+	zip_tab_gesture: zip_tab_gesture {
+		compatible = "zmk,input-processor-keybind";
+		#input-processor-cells = <0>;
+		mode = <1>;
+		bindings =
+			<&kp LC(LS(TAB))>,  // [0] 右→INVERT→実際は「次のタブ (Ctrl+Tab)」
+			<&kp LC(TAB)>,      // [1] 左→INVERT→実際は「前のタブ (Ctrl+Shift+Tab)」
+			<&kp LG(DOWN)>,     // [2] 上→INVERT→実際は「最小化 (Win+Down)」
+			<&kp LC(T)>;        // [3] 下→INVERT→実際は「新規タブ (Ctrl+T)」
+		tick = <80>;
+		wait-ms = <60>;
+		tap-ms = <10>;
+	};
 
-    zip_vdesk_gesture: zip_vdesk_gesture {
-        compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
-        mode = <1>;
-        bindings =
-            <&kp LC(LG(LEFT))>,   // 右: 前のデスク → INVERT補正で実際は「次のデスク」
-            <&kp LC(LG(RIGHT))>,  // 左: 次のデスク → INVERT補正で実際は「前のデスク」
-            <&kp LG(DOWN)>,       // 上: 最小化    → INVERT補正で実際は「下=最小化」
-            <&kp LC(LG(D))>;      // 下: 新規デスク → INVERT補正で実際は「上=新規デスク」
-        tick = <80>;
-        wait-ms = <60>;
-        tap-ms = <10>;
-    };
+	zip_vdesk_gesture: zip_vdesk_gesture {
+		compatible = "zmk,input-processor-keybind";
+		#input-processor-cells = <0>;
+		mode = <1>;
+		bindings =
+			<&kp LC(LG(LEFT))>,  // [0] 右→INVERT→実際は「次のデスク (Ctrl+Win+Right)」
+			<&kp LC(LG(RIGHT))>, // [1] 左→INVERT→実際は「前のデスク (Ctrl+Win+Left)」
+			<&kp LG(DOWN)>,      // [2] 上→INVERT→実際は「最小化 (Win+Down)」
+			<&kp LC(LG(D))>;     // [3] 下→INVERT→実際は「新規デスク (Ctrl+Win+D)」
+		tick = <80>;
+		wait-ms = <60>;
+		tap-ms = <10>;
+	};
+
+	zip_winsnap_gesture: zip_winsnap_gesture {
+		compatible = "zmk,input-processor-keybind";
+		#input-processor-cells = <0>;
+		mode = <1>;
+		bindings =
+			<&kp LG(LEFT)>,   // [0] 右→INVERT→実際は「右スナップ (Win+Right)」
+			<&kp LG(RIGHT)>,  // [1] 左→INVERT→実際は「左スナップ (Win+Left)」
+			<&kp LG(DOWN)>,   // [2] 上→INVERT→実際は「最大化 (Win+Up)」
+			<&kp LG(UP)>;     // [3] 下→INVERT→実際は「元に戻す/最小化 (Win+Down)」
+		tick = <80>;
+		wait-ms = <60>;
+		tap-ms = <10>;
+	};
 };
 
 &pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-<&zip_temp_layer 8 10000>;
+	input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+		<&zip_temp_layer 8 10000>;
 
-scroller {
-	layers = <6>;
-	input-processors = <&zip_xy_to_scroll_mapper>,
-<&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>,
-<&zip_scroll_scaler 11 130>;
-	process-next;
+	scroller {
+		layers = <6>;
+		input-processors = <&zip_xy_to_scroll_mapper>,
+			<&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>,
+			<&zip_scroll_scaler 11 130>;
+		process-next;
 	};
 
-tab_gesture {
-	layers = <9>;
-	input-processors = <&zip_y_scaler 1 2>, <&zip_tab_gesture>;
-	process-next;
+	tab_gesture {
+		layers = <9>;
+		input-processors = <&zip_y_scaler 1 2>, <&zip_tab_gesture>;
+		process-next;
 	};
 
-tab_gesture_freeze {
-	layers = <9>;
-	input-processors = <&zip_xy_scaler 0 1>;
+	tab_gesture_freeze {
+		layers = <9>;
+		input-processors = <&zip_xy_scaler 0 1>;
 	};
 
-vdesk_gesture {
-	layers = <10>;
-	input-processors = <&zip_y_scaler 1 2>, <&zip_vdesk_gesture>;
-	process-next;
+	vdesk_gesture {
+		layers = <10>;
+		input-processors = <&zip_y_scaler 1 2>, <&zip_vdesk_gesture>;
+		process-next;
 	};
 
-vdesk_gesture_freeze {
-	layers = <10>;
-	input-processors = <&zip_xy_scaler 0 1>;
+	vdesk_gesture_freeze {
+		layers = <10>;
+		input-processors = <&zip_xy_scaler 0 1>;
+	};
+
+	winsnap_gesture {
+		layers = <11>;
+		input-processors = <&zip_y_scaler 1 2>, <&zip_winsnap_gesture>;
+		process-next;
+	};
+
+	winsnap_gesture_freeze {
+		layers = <11>;
+		input-processors = <&zip_xy_scaler 0 1>;
 	};
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <150>;
-    excluded-positions = <33 34 35>; // J K L
-};
-
-&size_s_transform {
-    col-offset = <7>;
-};
-
-&size_m_transform {
-    col-offset = <7>;
-};
-
-&size_l_transform {
-    col-offset = <7>;
+	require-prior-idle-ms = <150>;
+	excluded-positions = <33 34 35>; // J K L
 };
