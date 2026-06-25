@@ -97,3 +97,15 @@
 	require-prior-idle-ms = <150>;
 	excluded-positions = <33 34 35>; // J K L
 };
+
+&size_s_transform {
+	col-offset = <7>;
+};
+
+&size_m_transform {
+	col-offset = <7>;
+};
+
+&size_l_transform {
+	col-offset = <7>;
+};
