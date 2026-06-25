@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "config/keymap.keymap"
-      - "keymap_drawer.config.yaml"
+      - "keymap-drawer/keymap.yaml"
 
 jobs:
   draw:
@@ -13,5 +13,5 @@ jobs:
     permissions:
       contents: write
     with:
-      keymap_patterns: "config/keymap.keymap"
+      yaml_dir: "keymap-drawer"
       output_folder: "keymap-drawer"
