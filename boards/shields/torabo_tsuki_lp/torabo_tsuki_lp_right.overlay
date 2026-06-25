@@ -9,10 +9,10 @@
         #input-processor-cells = <0>;
         mode = <1>;
         bindings =
-            <&kp LC(TAB)>,        // 右: 次のタブ
-            <&kp LC(LS(TAB))>,    // 左: 前のタブ
-            <&kp LC(T)>,          // 上: 新規タブ
-            <&kp LG(DOWN)>;       // 下: 最小化
+            <&kp LC(LS(TAB))>,    // 右: 前のタブ → INVERT補正で実際は「次のタブ」
+            <&kp LC(TAB)>,        // 左: 次のタブ → INVERT補正で実際は「前のタブ」
+            <&kp LG(DOWN)>,       // 上: 最小化  → INVERT補正で実際は「下=最小化」
+            <&kp LC(T)>;          // 下: 新規タブ → INVERT補正で実際は「上=新規タブ」
         tick = <80>;
         wait-ms = <60>;
         tap-ms = <10>;
@@ -23,10 +23,10 @@
         #input-processor-cells = <0>;
         mode = <1>;
         bindings =
-            <&kp LC(LG(RIGHT))>,  // 右: 次のデスクトップ
-            <&kp LC(LG(LEFT))>,   // 左: 前のデスクトップ
-            <&kp LC(LG(D))>,      // 上: 新規デスクトップ
-            <&kp LG(DOWN)>;       // 下: 最小化
+            <&kp LC(LG(LEFT))>,   // 右: 前のデスク → INVERT補正で実際は「次のデスク」
+            <&kp LC(LG(RIGHT))>,  // 左: 次のデスク → INVERT補正で実際は「前のデスク」
+            <&kp LG(DOWN)>,       // 上: 最小化    → INVERT補正で実際は「下=最小化」
+            <&kp LC(LG(D))>;      // 下: 新規デスク → INVERT補正で実際は「上=新規デスク」
         tick = <80>;
         wait-ms = <60>;
         tap-ms = <10>;
