@@ -28,6 +28,11 @@
             key-positions = <21 22>;
             timeout-ms = <25>;
         };
+
+        Layer11 {
+            bindings = <&mo 11>;
+            key-positions = <49 50>;
+        };
     };
 
     macros {
