@@ -190,7 +190,7 @@
             >;
         };
 
-        layer_11 {
+        WinSnap_Gesture_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
