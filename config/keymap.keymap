@@ -90,7 +90,7 @@
             >;
         };
 
-        Win-Function_Layer {
+        Function_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                       &trans                &trans                 &trans             &trans                &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                       &kp LESS_THAN         &kp GREATER_THAN       &kp DOUBLE_QUOTES  &kp SEMICOLON         &kp AMPERSAND    &trans
