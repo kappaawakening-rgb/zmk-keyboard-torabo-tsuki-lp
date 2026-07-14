@@ -95,7 +95,7 @@
 
 &zip_temp_layer {
 	require-prior-idle-ms = <150>;
-	excluded-positions = <33 34 35>; // J K L
+	excluded-positions = <33 34 35 36 47 49>; // J K L / ⇧(Shift 36) / MB4(47) / MB5(49)
 };
 
 &size_s_transform {
