@@ -21,6 +21,9 @@ manifest:
     - name: zmk-driver-paw3222
       remote: sekigon-gonnoc
       revision: torabo-tsuki
+    - name: zmk-driver-iqs7211e
+      remote: sekigon-gonnoc
+      revision: mini-trackpad
     - name: zmk-feature-cdc-acm-bootloader-trigger
       remote: sekigon-gonnoc
       revision: v0.2
