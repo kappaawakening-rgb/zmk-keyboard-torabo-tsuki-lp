@@ -1,0 +1,24 @@
+/{
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        pointing_device_split: pointing_device_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    pointing_device_split_listener: pointing_device_split_listener {
+        compatible = "zmk,input-listener";
+        device = <&pointing_device_split>;
+        status = "okay";
+        // トラックパッド専用チューニング（double_ballとは分離）
+        //  - 向き: 反転なし（上下左右を正方向に）。片軸だけ逆なら該当軸のscalerを負にせず、
+        //          zip_x_transform/zip_y_transform に INPUT_TRANSFORM_*_INVERT を足して調整。
+        //  - 速度: 分母を大きくするほど遅い（1 2 = 1/2, 1 3 = 1/3）。
+        input-processors =
+            <&zip_xy_scaler 1 2>,      // カーソル速度 1/2
+            <&zip_scroll_scaler 1 2>;  // スクロール速度 1/2
+     };
+};
