@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/sekigon-gonnoc
     - name: zettaface
       url-base: https://github.com/zettaface
+    - name: kappaawakening-rgb
+      url-base: https://github.com/kappaawakening-rgb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,7 +24,7 @@ manifest:
       remote: sekigon-gonnoc
       revision: torabo-tsuki
     - name: zmk-driver-iqs7211e
-      remote: sekigon-gonnoc
+      remote: kappaawakening-rgb
       revision: mini-trackpad
     - name: zmk-feature-cdc-acm-bootloader-trigger
       remote: sekigon-gonnoc
