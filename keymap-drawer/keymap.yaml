@@ -45,7 +45,7 @@ layers:
   - C
   - V
   - B
-  - TAB
+  - BACKSPACE
   - DELETE
   - N
   - M
