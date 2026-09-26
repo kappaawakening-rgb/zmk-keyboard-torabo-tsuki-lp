@@ -373,8 +373,8 @@ path.combo {
 <g transform="translate(364, 252)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<a href="#Win-Function_Layer">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Win-Functi…</tspan></text>
+<a href="#Function_Layer">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Function_L…</tspan></text>
 </a></g>
 <g transform="translate(476, 252)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -432,8 +432,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -690,8 +690,8 @@ path.combo {
 <g transform="translate(364, 252)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<a href="#Win-Function_Layer">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Win-Functi…</tspan></text>
+<a href="#Function_Layer">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">Function_L…</tspan></text>
 </a></g>
 <g transform="translate(476, 252)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -749,13 +749,13 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 672)" class="layer-Win-Function_Layer">
-<text x="0" y="28" class="label" id="Win-Function_Layer">Win-Function_Layer:</text>
+<g transform="translate(30, 672)" class="layer-Function_Layer">
+<text x="0" y="28" class="label" id="Function_Layer">Function_Layer:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1040,8 +1040,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1332,8 +1332,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1643,8 +1643,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1935,8 +1935,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -2237,8 +2237,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -2532,8 +2532,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -2690,9 +2690,11 @@ path.combo {
 <tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB3</tspan>
 </text>
 </g>
-<g transform="translate(756, 140)" class="key trans keypos-36">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(756, 140)" class="key keypos-36">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">SHIFT</tspan>
+</text>
 </g>
 <g transform="translate(812, 140)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2734,17 +2736,21 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(588, 196)" class="key trans keypos-47">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(588, 196)" class="key keypos-47">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB4</tspan>
+</text>
 </g>
 <g transform="translate(644, 196)" class="key trans keypos-48">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(700, 196)" class="key trans keypos-49">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(700, 196)" class="key keypos-49">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB5</tspan>
+</text>
 </g>
 <g transform="translate(756, 196)" class="key trans keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2758,13 +2764,15 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(84, 252)" class="key trans keypos-53">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(84, 252)" class="key keypos-53">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">CONTROL</tspan>
+</text>
 </g>
-<g transform="translate(140, 252)" class="key trans keypos-54">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(140, 252)" class="key keypos-54">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">LSHFT</text>
 </g>
 <g transform="translate(196, 252)" class="key trans keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -2830,8 +2838,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -3120,8 +3128,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
@@ -3412,13 +3420,13 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 3696)" class="layer-11">
-<text x="0" y="28" class="label" id="x_x">11:</text>
+<g transform="translate(30, 3696)" class="layer-WinSnap_Gesture_Layer">
+<text x="0" y="28" class="label" id="WinSnap_Gesture_Layer">WinSnap_Gesture_Layer:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3702,8 +3710,8 @@ path.combo {
 </a></g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="728" y="196" class="combo tap layer-activator">11</text>
+<a href="#WinSnap_Gesture_Layer">
+<text x="728" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">WinSnap_Ge…</tspan></text>
 </a></g>
 </g>
 </g>
