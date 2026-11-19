@@ -9,10 +9,10 @@
 		#input-processor-cells = <0>;
 		mode = <1>;
 		bindings =
-			<&kp LC(LS(TAB))>,  // [0] 右→INVERT→実際は「次のタブ (Ctrl+Tab)」
-			<&kp LC(TAB)>,      // [1] 左→INVERT→実際は「前のタブ (Ctrl+Shift+Tab)」
-			<&kp LG(DOWN)>,     // [2] 上→INVERT→実際は「最小化 (Win+Down)」
-			<&kp LC(T)>;        // [3] 下→INVERT→実際は「新規タブ (Ctrl+T)」
+			<&kp LC(LS(TAB))>,  // [0] 左 → 前のタブ（Ctrl+Shift+Tab）
+			<&kp LC(TAB)>,      // [1] 右 → 次のタブ（Ctrl+Tab）
+			<&kp LG(DOWN)>,     // [2] 下 → 最小化（Win+↓）
+			<&kp LC(T)>;        // [3] 上 → 新しいタブ（Ctrl+T）
 		tick = <80>;
 		wait-ms = <60>;
 		tap-ms = <10>;
@@ -23,10 +23,10 @@
 		#input-processor-cells = <0>;
 		mode = <1>;
 		bindings =
-			<&kp LC(LG(LEFT))>,  // [0] 右→INVERT→実際は「次のデスク (Ctrl+Win+Right)」
-			<&kp LC(LG(RIGHT))>, // [1] 左→INVERT→実際は「前のデスク (Ctrl+Win+Left)」
-			<&kp LG(DOWN)>,      // [2] 上→INVERT→実際は「最小化 (Win+Down)」
-			<&kp LC(LG(D))>;     // [3] 下→INVERT→実際は「新規デスク (Ctrl+Win+D)」
+			<&kp LC(LG(LEFT))>,  // [0] 左 → 前のデスクトップ（Ctrl+Win+←）
+			<&kp LC(LG(RIGHT))>, // [1] 右 → 次のデスクトップ（Ctrl+Win+→）
+			<&kp LG(DOWN)>,      // [2] 下 → 最小化（Win+↓）
+			<&kp LC(LG(D))>;     // [3] 上 → 新しいデスクトップ（Ctrl+Win+D）
 		tick = <80>;
 		wait-ms = <60>;
 		tap-ms = <10>;
@@ -37,10 +37,10 @@
 		#input-processor-cells = <0>;
 		mode = <1>;
 		bindings =
-			<&kp LG(LEFT)>,   // [0] 右→INVERT→実際は「右スナップ (Win+Right)」
-			<&kp LG(RIGHT)>,  // [1] 左→INVERT→実際は「左スナップ (Win+Left)」
-			<&kp LG(DOWN)>,   // [2] 上→INVERT→実際は「最大化 (Win+Up)」
-			<&kp LG(UP)>;     // [3] 下→INVERT→実際は「元に戻す/最小化 (Win+Down)」
+			<&kp LG(LEFT)>,   // [0] 左 → 左に寄せる（Win+←）
+			<&kp LG(RIGHT)>,  // [1] 右 → 右に寄せる（Win+→）
+			<&kp LG(DOWN)>,   // [2] 下 → 元に戻す・最小化（Win+↓）
+			<&kp LG(UP)>;     // [3] 上 → 最大化（Win+↑）
 		tick = <80>;
 		wait-ms = <60>;
 		tap-ms = <10>;

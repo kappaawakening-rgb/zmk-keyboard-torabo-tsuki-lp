@@ -161,9 +161,9 @@
         };
 
         // Layer 9: ブラウザタブ切替ジェスチャ専用レイヤー
-        // ボール操作: 左=前タブ 右=次タブ 上=新規タブ 下=最小化
+        // ボール・パッド操作: 左=前タブ 右=次タブ 上=新規タブ 下=最小化
         // 閉じる(Ctrl+W)は右親指キー(position 45)に割当
-        // キーバインドはoverlay側のzip_tab_gestureで処理
+        // キーバインドはoverlay側のzip_tab_gesture（ボール）と、パッドのスニペット側のzip_pad_tab_gesture（パッド）で処理
 
         Tab_Gesture_Layer {
             bindings = <
@@ -176,9 +176,9 @@
         };
 
         // Layer 10: 仮想デスクトップ切替ジェスチャ専用レイヤー
-        // ボール操作: 左=前デスク 右=次デスク 上=新規デスク 下=最小化
+        // ボール・パッド操作: 左=前デスク 右=次デスク 上=新規デスク 下=最小化
         // 閉じる(Ctrl+Win+F4)は右親指キー(position 45)に割当
-        // キーバインドはoverlay側のzip_vdesk_gestureで処理
+        // キーバインドはoverlay側のzip_vdesk_gesture（ボール）と、パッドのスニペット側のzip_pad_vdesk_gesture（パッド）で処理
 
         VDesk_Gesture_Layer {
             bindings = <
