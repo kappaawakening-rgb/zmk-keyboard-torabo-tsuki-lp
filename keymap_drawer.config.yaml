@@ -1,0 +1,4 @@
+parse_config:
+  raw_binding_map:
+    "&to 0": {t: "Win"}
+    "&to 1": {t: "Mac"}

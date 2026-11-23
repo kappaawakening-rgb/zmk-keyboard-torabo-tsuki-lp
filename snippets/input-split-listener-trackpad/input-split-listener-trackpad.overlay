@@ -1,0 +1,131 @@
+#include <dt-bindings/zmk/keys.h>
+
+/{
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        pointing_device_split: pointing_device_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    zip_pad_zoom_gesture: zip_pad_zoom_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;
+        bindings =
+            <&none>,  // [0] 右 → なし
+            <&kp LC(N0)>,  // [1] 左 → 元の大きさ（Ctrl+0）
+            <&kp LC(KP_PLUS)>,  // [2] 上 → 拡大（Ctrl+テンキー+）
+            <&kp LC(KP_MINUS)>;  // [3] 下 → 縮小（Ctrl+テンキー-）
+        tick = <80>;
+        wait-ms = <60>;
+        tap-ms = <10>;
+    };
+
+    pointing_device_split_listener: pointing_device_split_listener {
+        compatible = "zmk,input-listener";
+        device = <&pointing_device_split>;
+        status = "okay";
+        // トラックパッド専用チューニング（double_ballとは分離）
+        //  - 向き: 反転なし（上下左右を正方向に）。片軸だけ逆なら該当軸のscalerを負にせず、
+        //          zip_x_transform/zip_y_transform に INPUT_TRANSFORM_*_INVERT を足して調整。
+        //  - 速度: 分母を大きくするほど遅い（1 2 = 1/2, 1 3 = 1/3）。
+        input-processors =
+            <&zip_xy_scaler 3 4>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+
+        zoom_gesture {
+            layers = <6>;
+            input-processors = <&zip_y_scaler 1 2>,
+                <&zip_pad_zoom_gesture>;
+            process-next;
+        };
+
+        zoom_gesture_freeze {
+            layers = <6>;
+            input-processors = <&zip_xy_scaler 0 1>;
+        };
+
+        tab_gesture {
+            layers = <9>;
+            input-processors = <&zip_y_scaler 1 2>,
+                <&zip_pad_tab_gesture>;
+            process-next;
+        };
+
+        tab_gesture_freeze {
+            layers = <9>;
+            input-processors = <&zip_xy_scaler 0 1>;
+        };
+
+        vdesk_gesture {
+            layers = <10>;
+            input-processors = <&zip_y_scaler 1 2>,
+                <&zip_pad_vdesk_gesture>;
+            process-next;
+        };
+
+        vdesk_gesture_freeze {
+            layers = <10>;
+            input-processors = <&zip_xy_scaler 0 1>;
+        };
+
+        winsnap_gesture {
+            layers = <11>;
+            input-processors = <&zip_y_scaler 1 2>,
+                <&zip_pad_winsnap_gesture>;
+            process-next;
+        };
+
+        winsnap_gesture_freeze {
+            layers = <11>;
+            input-processors = <&zip_xy_scaler 0 1>;
+        };
+     };
+
+    zip_pad_tab_gesture: zip_pad_tab_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;
+        bindings =
+            <&kp LC(TAB)>,  // [0] 右 → 次のタブ（Ctrl+Tab）
+            <&kp LC(LS(TAB))>,  // [1] 左 → 前のタブ（Ctrl+Shift+Tab）
+            <&kp LC(T)>,  // [2] 上 → 新しいタブ（Ctrl+T）
+            <&kp LG(DOWN)>;  // [3] 下 → 最小化（Win+↓）
+        tick = <80>;
+        wait-ms = <60>;
+        tap-ms = <10>;
+    };
+
+    zip_pad_vdesk_gesture: zip_pad_vdesk_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;
+        bindings =
+            <&kp LC(LG(RIGHT))>,  // [0] 右 → 次のデスクトップ（Ctrl+Win+→）
+            <&kp LC(LG(LEFT))>,  // [1] 左 → 前のデスクトップ（Ctrl+Win+←）
+            <&kp LC(LG(D))>,  // [2] 上 → 新しいデスクトップ（Ctrl+Win+D）
+            <&kp LG(DOWN)>;  // [3] 下 → 最小化（Win+↓）
+        tick = <80>;
+        wait-ms = <60>;
+        tap-ms = <10>;
+    };
+
+    zip_pad_winsnap_gesture: zip_pad_winsnap_gesture {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        mode = <1>;
+        bindings =
+            <&kp LG(RIGHT)>,  // [0] 右 → 右に寄せる（Win+→）
+            <&kp LG(LEFT)>,  // [1] 左 → 左に寄せる（Win+←）
+            <&kp LG(UP)>,  // [2] 上 → 最大化（Win+↑）
+            <&kp LG(DOWN)>;  // [3] 下 → 元に戻す・最小化（Win+↓）
+        tick = <80>;
+        wait-ms = <60>;
+        tap-ms = <10>;
+    };
+};
