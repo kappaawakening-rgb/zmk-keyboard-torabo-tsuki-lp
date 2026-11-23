@@ -515,7 +515,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Win
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -534,7 +534,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - BT CLR ALL
+  - '&sys_reset'
   - {t: ▽, type: trans}
   Mouse_Layer:
   - {t: ▽, type: trans}
